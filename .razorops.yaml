@@ -3,6 +3,7 @@ version: v2
 
 tasks:
   build:
+    runner: razorci/python:3.7
     steps:
     - checkout
     - cache/pull: pip-deps-{{ checksum "requirements.txt" }}
